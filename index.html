@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulane Resource Hub | Orientation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 
+      Typography Fallbacks per Brand Guide:
+      Serif: Adobe Caslon Pro -> Libre Baskerville -> Georgia
+      Sans: Freight Sans Pro -> Montserrat -> Verdana
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --tulane-green: #006747;
+            --tulane-sky-blue: #00b5e2;
+            --tulane-white: #ffffff;
+            --tulane-sand: #f1f2f2;
+            --tulane-dark: #1b1c1d;
+        }
+        
+        body { 
+            font-family: 'Montserrat', 'Verdana', sans-serif; 
+            background-color: var(--tulane-sand); 
+            color: var(--tulane-dark); 
+            scroll-behavior: smooth; 
+        }
+
+        h1, h2, h3, .brand-serif { 
+            font-family: 'Libre Baskerville', 'Georgia', serif; 
+        }
+
+        .bg-tulane-green { background-color: var(--tulane-green); }
+        .text-tulane-green { color: var(--tulane-green); }
+        
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 103, 71, 0.94), rgba(0, 103, 71, 0.88)), 
+                        url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover; 
+            background-position: center; 
+            border-bottom: 8px solid var(--tulane-sky-blue);
+        }
+
+        .resource-card { 
+            transition: all 0.4s ease; 
+            background: white; 
+            border-radius: 1rem; 
+            border: 1px solid rgba(0, 103, 71, 0.1); 
+        }
+        
+        .resource-card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 20px 40px rgba(0, 103, 71, 0.1); 
+            border-color: var(--tulane-sky-blue); 
+        }
+
+        .btn-tulane { 
+            background-color: var(--tulane-white); 
+            color: var(--tulane-green); 
+            font-weight: 800; 
+            transition: all 0.3s ease; 
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .btn-tulane:hover { 
+            background-color: var(--tulane-sky-blue); 
+            color: white; 
+            transform: scale(1.05); 
+        }
+
+        .nav-link {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header: Pure Text-Based Branding -->
+    <header class="bg-white py-6 px-6 sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-black text-tulane-green leading-none tracking-tight flex items-center" style="font-family: 'Montserrat', sans-serif;">
+                    TULANE <span class="mx-3 w-1.5 h-1.5 rounded-full bg-tulane-sky-blue"></span> 
+                    <span class="font-normal italic text-xl" style="font-family: 'Libre Baskerville'">Talent Development</span>
+                </h1>
+            </div>
+            <div class="hidden md:flex items-center space-x-2 text-tulane-green font-bold text-[10px] uppercase tracking-[0.2em]">
+                <span class="w-2 h-2 rounded-full bg-tulane-sky-blue animate-pulse"></span>
+                <span style="font-family: 'Montserrat', sans-serif;">Orientation Hub</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-28 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-6xl md:text-8xl font-bold mb-8 leading-tight">Your Professional <br><span class="italic text-tulane-sky-blue">Toolkit.</span></h2>
+            
+            <!-- Quick Navigation -->
+            <div class="flex flex-wrap justify-center gap-5 mb-16">
+                <a href="#digital-tools" class="btn-tulane px-10 py-4 rounded-lg text-sm uppercase tracking-widest shadow-lg">Digital Tools</a>
+                <a href="#logistics" class="btn-tulane px-10 py-4 rounded-lg text-sm uppercase tracking-widest shadow-lg">Logistics</a>
+                <a href="#personal" class="btn-tulane px-10 py-4 rounded-lg text-sm uppercase tracking-widest shadow-lg">Payroll & Benefits</a>
+            </div>
+
+            <!-- Pre-Email Access Notice -->
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl max-w-2xl mx-auto text-left flex items-center space-x-6">
+                <div class="bg-tulane-sky-blue p-4 rounded-full shadow-lg">
+                    <i class="fas fa-hourglass-half text-white text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-tulane-sky-blue font-black text-xs uppercase tracking-widest mb-2" style="font-family: 'Montserrat', sans-serif;">POST ORIENTATION ACTIVITIES</h3>
+                    <p class="text-sm opacity-90 leading-relaxed">While waiting for your <span class="font-bold text-tulane-sky-blue">Email Access</span>, explore these resources to familiarize yourself with the WaveWorks ecosystem and campus logistics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto py-24 px-6">
+        
+        <!-- WaveWorks Ecosystem -->
+        <div id="digital-tools" class="mb-28 scroll-mt-32">
+            <div class="mb-12">
+                <h3 class="text-4xl font-bold text-tulane-green mb-2">WaveWorks Ecosystem</h3>
+                <div class="h-1 w-20 bg-tulane-sky-blue"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <a href="https://tinyurl.com/TUServiceNow" target="_blank" class="resource-card p-8 group">
+                    <i class="fas fa-headset text-tulane-green text-3xl mb-6 group-hover:text-tulane-sky-blue transition-colors"></i>
+                    <h4 class="font-bold text-lg mb-2">Service Now</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Official portal for technical support and system errors.</p>
+                </a>
+                <a href="https://tinyurl.com/WWQRG" target="_blank" class="resource-card p-8 group">
+                    <i class="fas fa-file-invoice text-tulane-green text-3xl mb-6 group-hover:text-tulane-sky-blue transition-colors"></i>
+                    <h4 class="font-bold text-lg mb-2">QRGs</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Quick Reference Guides for essential system tasks.</p>
+                </a>
+                <a href="https://tinyurl.com/WWTDR" target="_blank" class="resource-card p-8 group">
+                    <i class="fas fa-seedling text-tulane-green text-3xl mb-6 group-hover:text-tulane-sky-blue transition-colors"></i>
+                    <h4 class="font-bold text-lg mb-2">Talent Dev</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Workshops and events for professional growth.</p>
+                </a>
+                <a href="https://tinyurl.com/WWTrainings" target="_blank" class="resource-card p-8 group">
+                    <i class="fas fa-graduation-cap text-tulane-green text-3xl mb-6 group-hover:text-tulane-sky-blue transition-colors"></i>
+                    <h4 class="font-bold text-lg mb-2">WW Trainings</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Self-paced courses to master the platform.</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Campus Logistics -->
+        <div id="logistics" class="mb-28 scroll-mt-32">
+            <div class="mb-12">
+                <h3 class="text-4xl font-bold text-tulane-green mb-2">Campus Logistics</h3>
+                <div class="h-1 w-20 bg-tulane-sky-blue"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="https://parking.tulane.edu" target="_blank" class="resource-card p-10 flex justify-between items-center group">
+                    <div>
+                        <h4 class="font-bold text-2xl mb-1">Parking Services</h4>
+                        <p class="text-gray-500">Permits, maps, and enforcement.</p>
+                    </div>
+                    <div class="bg-tulane-sand p-5 rounded-full group-hover:bg-tulane-green group-hover:text-white transition-all">
+                        <i class="fas fa-parking text-2xl"></i>
+                    </div>
+                </a>
+                <a href="https://shuttles.tulane.edu" target="_blank" class="resource-card p-10 flex justify-between items-center group">
+                    <div>
+                        <h4 class="font-bold text-2xl mb-1">Shuttle Services</h4>
+                        <p class="text-gray-500">Real-time tracking and schedules.</p>
+                    </div>
+                    <div class="bg-tulane-sand p-5 rounded-full group-hover:bg-tulane-green group-hover:text-white transition-all">
+                        <i class="fas fa-bus text-2xl"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Personal & Benefits -->
+        <div id="personal" class="scroll-mt-32">
+            <div class="bg-white rounded-[3rem] p-12 md:p-20 text-center shadow-2xl border border-gray-50">
+                <h3 class="text-4xl font-bold text-tulane-green mb-4">Personal & Benefits Portals</h3>
+                <p class="text-gray-500 mb-12 max-w-2xl mx-auto">Access your essential employee records and explore the comprehensive benefits available to the Tulane community.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Payroll -->
+                    <div class="bg-tulane-sand/50 p-10 rounded-3xl border border-white">
+                        <div class="bg-white w-16 h-16 rounded-2xl shadow-sm flex items-center justify-center mx-auto mb-6 text-tulane-green">
+                            <i class="fas fa-wallet text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-xl mb-6">Payroll & Time</h4>
+                        <div class="flex flex-col space-y-4">
+                            <a href="https://hr.tulane.edu/payroll" target="_blank" class="text-tulane-sky-blue font-black uppercase text-xs tracking-widest border-b-2 border-transparent hover:border-tulane-sky-blue transition-all pb-1 inline-block mx-auto">Manage Pay</a>
+                            <a href="https://hr.tulane.edu/time-holidays" target="_blank" class="text-tulane-sky-blue font-black uppercase text-xs tracking-widest border-b-2 border-transparent hover:border-tulane-sky-blue transition-all pb-1 inline-block mx-auto">Manage Time</a>
+                        </div>
+                    </div>
+                    <!-- Benefits -->
+                    <div class="bg-tulane-sand/50 p-10 rounded-3xl border border-white">
+                        <div class="bg-white w-16 h-16 rounded-2xl shadow-sm flex items-center justify-center mx-auto mb-6 text-tulane-sky-blue">
+                            <i class="fas fa-hand-holding-heart text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-xl mb-6">Benefits Hub</h4>
+                        <div class="flex flex-col space-y-4">
+                            <a href="https://hr.tulane.edu/benefits" target="_blank" class="text-tulane-sky-blue font-black uppercase text-xs tracking-widest border-b-2 border-transparent hover:border-tulane-sky-blue transition-all pb-1 inline-block mx-auto">Explore Benefits</a>
+                            <a href="https://hr.tulane.edu/tuition-waiver" target="_blank" class="text-tulane-sky-blue font-black uppercase text-xs tracking-widest border-b-2 border-transparent hover:border-tulane-sky-blue transition-all pb-1 inline-block mx-auto">Explore Tuition Waiver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-tulane-dark text-white py-16 px-6 text-center border-t-8 border-tulane-green">
+        <div class="max-w-7xl mx-auto">
+            <h5 class="text-xl font-bold mb-2" style="font-family: 'Montserrat', sans-serif;">TULANE <span class="font-normal italic" style="font-family: 'Libre Baskerville'">Talent Development</span></h5>
+            <p class="text-[10px] text-gray-500 uppercase tracking-[0.4em] font-bold">Office of Human Resources © 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                e.preventDefault();
+                const target = document.querySelector(targetId);
+                if(target) {
+                    const headerOffset = 100;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
